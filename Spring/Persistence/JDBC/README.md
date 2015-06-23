@@ -8,5 +8,6 @@ to specifically create the anoymous inner class every time in your CRUD operatio
 
 
 SpringJDBC.java showed you how to use springjdbc template correctly.
+
 AuthorityRepository is an example for you to knwo how use NamedParameterJdbcTemplate 
 in your code. 
