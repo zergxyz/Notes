@@ -1,4 +1,4 @@
-#Spring (Boot) Configurations
+# Spring (Boot) Configurations
 
 some notes for spring framework configuration. 
 
