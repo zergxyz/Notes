@@ -1,5 +1,4 @@
-**How to deal with following error?**
-Error configuring: org.springframework.boot:spring-boot-maven-plugin. Reason: Unable to retrieve component configurator for plugin configuration
+**Error** configuring: org.springframework.boot:spring-boot-maven-plugin. Reason: Unable to retrieve component configurator for plugin configuration
 AN: you need to upgrade the maven to version 3.x to make the spring-boot maven plug-in work correctly.
 
 Spring logging
