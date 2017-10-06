@@ -79,7 +79,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
     }
 }
 ```
-
+![](https://github.com/zergxyz/Notes/blob/master/Spring/mvc-flow.png)
 
 Reference
 * [1] [servlet 3+ initialization in spring](http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mvc.html#mvc-container-config)
