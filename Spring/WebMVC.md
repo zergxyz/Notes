@@ -80,9 +80,10 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 }
 ```
 
+
 Reference
-* [servlet 3+ initialization in spring](http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mvc.html#mvc-container-config)
-* [web initializer java dpi](http://docs.spring.io/spring/docs/4.0.x/javadoc-api/org/springframework/web/WebApplicationInitializer.html)
-* [How to configure your own view resolver](http://stackoverflow.com/questions/14426947/viewresolver-using-java-annotation)
-* [java conig blog](https://rajendersaini.wordpress.com/2013/07/01/step-by-step-spring-mvc-app-using-java-config/)
+* [1] [servlet 3+ initialization in spring](http://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/mvc.html#mvc-container-config)
+* [2] [web initializer java dpi](http://docs.spring.io/spring/docs/4.0.x/javadoc-api/org/springframework/web/WebApplicationInitializer.html)
+* [3] [How to configure your own view resolver](http://stackoverflow.com/questions/14426947/viewresolver-using-java-annotation)
+* [4] [java conig blog](https://rajendersaini.wordpress.com/2013/07/01/step-by-step-spring-mvc-app-using-java-config/)
 
