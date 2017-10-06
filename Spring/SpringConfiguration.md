@@ -11,7 +11,7 @@ Once you add the bom, you no longer need to specify the version of spring
 Spring uses JCL for logging. In maven it's the common-logging module.
 How to switch the comon-login? 
 
-''' maven
+```xml
     <dependencies>
     <dependency>
     <groupId>org.springframework</groupId>
@@ -25,7 +25,7 @@ How to switch the comon-login?
     </exclusions>
     </dependency>
     </dependencies>
-''' 
+```
 
 
 DI :
