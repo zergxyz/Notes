@@ -9,8 +9,9 @@ Spring logging
 You can use bom ( bill of materials ) and add it to your dependent management section to make sure all your spring dependencies including transitive ones are using the same  version.
 Once you add the bom, you no longer need to specify the version of spring
 Spring uses JCL for logging. In maven it's the common-logging module.
-How to switch the comon-login?
-'''
+How to switch the comon-login? 
+
+''' maven
     <dependencies>
     <dependency>
     <groupId>org.springframework</groupId>
@@ -24,7 +25,8 @@ How to switch the comon-login?
     </exclusions>
     </dependency>
     </dependencies>
-'''
+''' 
+
 
 DI :
 
