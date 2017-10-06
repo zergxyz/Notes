@@ -51,10 +51,9 @@ The configuration for ibm db2 will be similar like this:
 </bean>
 ```
 Then you can start using this connection in your java/spring application
-Reference:
 
 * [1] (http://razorsql.com/docs/help_db2.html) 
-* [how to deal with the type 4 connection in db2?](http://stackoverflow.com/questions/46664/ibm-db2-type-4-driver)
+* [2] (http://stackoverflow.com/questions/46664/ibm-db2-type-4-driver)
 * [3] (http://www-01.ibm.com/support/knowledgecenter/SSEPGG_10.1.0/com.ibm.db2.luw.apdv.java.doc/src/tpc/imjcc_cjvjcskb.html?lang=en
 )
 	
