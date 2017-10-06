@@ -1,2 +1,1 @@
-# codeSum
-Personal code libs/samples and summaries.
+Programming notes, study summaries and code blocks. 
