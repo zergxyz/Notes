@@ -52,3 +52,44 @@ In the main method, Class SpringApplication is a boot specific component and the
 For maven package, it will generate 2 jars and The .original file is the output of the default Maven compiler, while the other one is the jar file enhanced by Spring Boot’s plugin.
 
 About the property files, you can use application.properties/yaml to override the default app settings. More information can be found in the spring doc [2]. Default configs can be found in the org.springframework.boot.autoconfigure.* packages
+
+Use Java configuration to define a JNDI datasource: 
+``` java 
+@Configuration
+@EnableTransactionManagement
+@EnableJpaRepositories
+@PropertySource("classpath:props.properties")
+public class DataSourceConfigProd {
+
+    @Autowired
+    private Environment env;
+
+    @Bean
+    public AbstractPlatformTransactionManager transactionManager() {
+        return new JpaTransactionManager(entityManagerFactory());
+    }
+
+    @Bean
+    public EntityManagerFactory entityManagerFactory() {
+        final LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
+        bean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+        bean.setDataSource(dataSource());
+        final Properties props = new Properties();
+        props.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
+        props.setProperty("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
+        props.setProperty("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+        props.setProperty("hibernate.format_sql", env.getProperty("hibernate.format_sql"));
+
+        bean.setJpaProperties(props);
+        return bean.getObject();
+    }
+
+    @Bean
+    public DataSource dataSource() {
+        final JndiDataSourceLookup dsLookup = new JndiDataSourceLookup();
+        dsLookup.setResourceRef(true);
+        DataSource dataSource = dsLookup.getDataSource("jdbc/yourJdbcGoesHere");
+        return dataSource;
+    }
+}
+```
