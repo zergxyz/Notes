@@ -1,5 +1,3 @@
-### Spring JDBC Summary
-
 You need to use autowired and resource annotation to let spring pick up the data source 
 and create the db connection with jdbc template automatically.
 
