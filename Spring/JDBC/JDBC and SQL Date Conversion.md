@@ -1,4 +1,4 @@
-**Old version (JDK <=7)** 
+### Old version (JDK <=7) 
 JBDC with SQLServer requirements.
 you need these four jars in your classpath:
 1. sqljdbc4.jar
@@ -33,3 +33,5 @@ Date thisDate = dateFormat.parse("2012-07-10 14:58:00.000000");
 other resources related to JDBC programming:
 * multiple rows insertion: http://stackoverflow.com/questions/12012592/jdbc-insert-multiple-rows
 * multiple optional parameters: http://stackoverflow.com/questions/22227407/have-multiple-optional-parameters
+
+### New version (JDK >=8)
