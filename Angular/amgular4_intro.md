@@ -16,3 +16,16 @@ won’t try to refresh the page. Let’s update our code so that each of the fun
 4 }
 5 // and similarly with `voteUp()`
 ```
+Angular allows us to do this by using the Input decorator on a property of a Component:
+```typescript
+class ArticleComponent {
+   @Input() article: Article;
+   // ...
+```
+Now if we have an Article in a variable myArticle we could pass it to our ArticleComponent in our view. Remember, 
+we can pass a variable in an element by surrounding it in square brackets [variableName], like so:
+```
+<app-article [article]="myArticle"></app-article>
+```
+Notice the syntax here: we put the name of the input in brackets as in: [article] and the value of
+the attribute is what we want to pass into that input. Then, and this is important, the this.article on the ArticleComponent instance will be set to myArticle. We can think about the variable myArticle as being passed as a parameter (i.e. input) to our components.
