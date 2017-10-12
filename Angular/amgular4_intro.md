@@ -37,3 +37,14 @@ we can pass a variable in an element by surrounding it in square brackets [varia
 ```
 Notice the syntax here: we put the name of the input in brackets as in: [article] and the value of
 the attribute is what we want to pass into that input. Then, and this is important, the this.article on the ArticleComponent instance will be set to myArticle. We can think about the variable myArticle as being passed as a parameter (i.e. input) to our components.
+```typescript
+1 <app-article
+2 *ngFor="let foobar of articles"
+3 [article]="foobar">
+4 </app-article>
+```
+So here we have three variables:
+1. articles which is an Array of Articles, defined on the AppComponent
+2. foobar which is a single element of articles (an Article), defined by NgFor
+3. article which is the name of the field defined on inputs of the ArticleComponent
+Basically, NgFor generates a temporary variable foobar and then we’re passing it in to app-article
