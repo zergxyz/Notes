@@ -17,6 +17,7 @@ won’t try to refresh the page. Let’s update our code so that each of the fun
 5 // and similarly with `voteUp()`
 ```
 **pass input parameters to component**
+
 Angular allows us to do this by using the Input decorator on a property of a Component:
 ```typescript
 class ArticleComponent {
