@@ -33,6 +33,7 @@ public class User {
 ```
 
 how to sort object in collections? https://stackoverflow.com/questions/5927109/sort-objects-in-arraylist-by-date 
+
 you need to implement the comparable interface and overwirte compareTo method inside like this: 
 ``` java 
 public static class MyObject implements Comparable<MyObject> {
@@ -53,3 +54,4 @@ public static class MyObject implements Comparable<MyObject> {
   }
 }
 ```
+Another reference link: https://dzone.com/articles/sorting-java-arraylist 
