@@ -22,3 +22,7 @@ for key, value in olddict.items():
         newdict.setdefault(string, []).append(key)
 ```
 reference link: https://stackoverflow.com/questions/35945473/how-to-reverse-a-dictionary-in-python 
+
+
+try to test with picture uploading : 
+![](https://i.imgur.com/anjnuhD.png)
