@@ -16,5 +16,12 @@ the general query is like this:**
 SELECT LEFT(string_expression, CHARINDEX(expression_to_find, string_expression) - 1)
 #remove before "*"
 SELECT REPLACE(SUBSTRING(string_expression, CHARINDEX(expression_to_find, string_expression), LEN(string_expression)), string_pattern, string_replacement)
+
+# my demo query: parse contnets started with "assessment / plan"
+select 
+b.*, 
+REPLACE(SUBSTRING([NoteContents], 
+CHARINDEX('ASSESSMENT / PLAN', [NoteContents]),
+LEN([NoteContents])), 'ASSESSMENT / PLAN', '') AS Notes
 ```
 more detialed can be found here: https://basitaalishan.com/2014/02/23/removing-part-of-string-before-and-after-specific-character-using-transact-sql-string-functions/ 
