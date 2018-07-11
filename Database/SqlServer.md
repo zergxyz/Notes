@@ -5,6 +5,8 @@ convert datetime to date in SQL: cast(getdate() as date )  https://stackoverflow
 ``` sql 
 DATEADD(d, 1, EOMONTH(current_timestamp))  # sql server 2012+ 
 DATEADD(m, DATEDIFF(m, -1, current_timestamp), 0)   # sql 2008 and older 
+# example: get next 2 month's first day: 
+select DATEADD(d, 1, EOMONTH(DATEADD(d, 1, EOMONTH(current_timestamp)))) 
 ```
 reference here: https://stackoverflow.com/questions/22623971/first-day-of-the-next-month  
 
