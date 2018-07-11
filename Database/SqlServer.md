@@ -5,3 +5,14 @@ How to get the next month day 1 based on current datetime? https://stackoverflow
 DATEADD(d, 1, EOMONTH(current_timestamp))  # sql server 2012+ 
 DATEADD(m, DATEDIFF(m, -1, current_timestamp), 0)   # sql 2008 and older 
 ```
+
+
+**Using T-sql to remove part of string before or after specific characters. : 
+the general query is like this:** 
+``` sql 
+#remove after "*"
+SELECT LEFT(string_expression, CHARINDEX(expression_to_find, string_expression) - 1)
+#remove before "*"
+SELECT REPLACE(SUBSTRING(string_expression, CHARINDEX(expression_to_find, string_expression), LEN(string_expression)), string_pattern, string_replacement)
+```
+more detialed can be found here: https://basitaalishan.com/2014/02/23/removing-part-of-string-before-and-after-specific-character-using-transact-sql-string-functions/ 
