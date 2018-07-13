@@ -26,5 +26,6 @@ REPLACE(SUBSTRING([NoteContents],
 CHARINDEX('ASSESSMENT / PLAN', [NoteContents]),
 LEN([NoteContents])), 'ASSESSMENT / PLAN', '') AS Notes
 ```
-more detialed can be found here: https://basitaalishan.com/2014/02/23/removing-part-of-string-before-and-after-specific-character-using-transact-sql-string-functions/ 
-https://stackoverflow.com/questions/18362260/a-sql-query-to-select-a-string-between-two-known-strings 
+more detialed can be found here:
+* https://basitaalishan.com/2014/02/23/removing-part-of-string-before-and-after-specific-character-using-transact-sql-string-functions/ 
+* https://stackoverflow.com/questions/18362260/a-sql-query-to-select-a-string-between-two-known-strings 
