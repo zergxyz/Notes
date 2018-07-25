@@ -29,3 +29,7 @@ LEN([NoteContents])), 'ASSESSMENT / PLAN', '') AS Notes
 more detialed can be found here:
 * https://basitaalishan.com/2014/02/23/removing-part-of-string-before-and-after-specific-character-using-transact-sql-string-functions/ 
 * https://stackoverflow.com/questions/18362260/a-sql-query-to-select-a-string-between-two-known-strings 
+
+How to insert the auto current date when a new row is added into the table? 
+https://www.itsupportguides.com/knowledge-base/sql-server/sql-server-how-to-set-a-datetime-field-to-automatically-use-current-datetime/ 
+basically you can change the default value from the design mode from SSMS. 
