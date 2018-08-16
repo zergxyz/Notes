@@ -8,3 +8,9 @@ SpringJDBC.java showed you how to use springjdbc template correctly.
 
 AuthorityRepository is an example for you to knwo how use NamedParameterJdbcTemplate 
 in your code. 
+
+how to use lambda to check hastmap/table? 
+https://stackoverflow.com/questions/30608360/java-8-extract-first-key-from-matching-value-in-a-map 
+https://stackoverflow.com/questions/49261514/how-to-get-a-csv-list-from-jdbctemplate
+https://stackoverflow.com/questions/6917906/return-type-for-jdbctemplate-queryforlistsql-object-classtype 
+
