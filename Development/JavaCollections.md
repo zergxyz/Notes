@@ -53,5 +53,9 @@ public static class MyObject implements Comparable<MyObject> {
     return getDateTime().compareTo(o.getDateTime());
   }
 }
+
+
+Collections.sort(testList);
+Collections.reverse(testList);
 ```
 Another reference link: https://dzone.com/articles/sorting-java-arraylist 
