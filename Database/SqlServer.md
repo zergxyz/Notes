@@ -33,3 +33,7 @@ more detialed can be found here:
 How to insert the auto current date when a new row is added into the table? 
 https://www.itsupportguides.com/knowledge-base/sql-server/sql-server-how-to-set-a-datetime-field-to-automatically-use-current-datetime/ 
 basically you can change the default value from the design mode from SSMS. 
+
+the way of escaping single quote in sql-server: 
+https://stackoverflow.com/questions/1586560/how-do-i-escape-a-single-quote-in-sql-server 
+you use '' to escape single '
