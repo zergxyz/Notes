@@ -69,5 +69,5 @@ obj = D()
 print(obj.a)  # 2
 obj.y()   # C.x
 ```
-The data attributes were set by initialisation so the last wins. The method attributes were inherited so the first one found stops the search.
+The data attributes were set by initialisation so the last wins. The method attributes were inherited so the first one found stops the search. That means D class will inherit both C and B methods and they will not overwrite with each other. 
 
