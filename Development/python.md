@@ -71,3 +71,5 @@ obj.y()   # C.x
 ```
 The data attributes were set by initialisation so the last wins. The method attributes were inherited so the first one found stops the search. That means D class will inherit both C and B methods and they will not overwrite with each other. 
 
+in numpy we can use the following way to add a new column: 
+https://stackoverflow.com/questions/8486294/how-to-add-an-extra-column-to-a-numpy-array 
