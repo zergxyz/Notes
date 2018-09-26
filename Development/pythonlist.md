@@ -16,7 +16,8 @@ print(b)
 # of the wrong type (it was None, and it doesn't make sense to append things to None!).
 c = b.append(9)
 
-# Note also that, when this error happens, Python will stop running; so it will never get to the last three print statements.
+# Note also that, when this error happens, Python will stop running; so it will never get to 
+# the last three print statements.
 print(a)
 print(b)
 print(c)
