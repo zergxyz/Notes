@@ -37,3 +37,6 @@ basically you can change the default value from the design mode from SSMS.
 the way of escaping single quote in sql-server: 
 https://stackoverflow.com/questions/1586560/how-do-i-escape-a-single-quote-in-sql-server 
 you use '' to escape single '
+
+How to deal with pivot rows and columns? 
+https://stackoverflow.com/questions/29569801/dynamic-pivot-needed-with-row-number 
