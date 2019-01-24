@@ -40,3 +40,7 @@ you use '' to escape single '
 
 How to deal with pivot rows and columns? 
 https://stackoverflow.com/questions/29569801/dynamic-pivot-needed-with-row-number 
+
+how to use cte 
+https://stackoverflow.com/questions/18941275/joining-multiple-common-table-expressions 
+
