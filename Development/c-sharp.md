@@ -96,4 +96,4 @@ class Program
         }
     }
 ```
-
+Since constants has to be declared immediately and can't be changed later on, the value you assign to a constant has to be a constant expression and the compiler must be able to evaluate the value already at compile time. This means that numbers, boolean values and strings can be used just fine for a constant, while e.g. a DateTime object can't be used as a constant.
