@@ -20,3 +20,23 @@ class Program
         }
     }
 ```
+
+
+In c# you are not allowed to override a class method unless it's marked as virtual: 
+```c#
+public class Animal
+{
+    public virtual void Greet()
+    {
+        Console.WriteLine("Hello, I'm some sort of animal!");
+    }
+}
+
+public class Dog : Animal
+{
+    public override void Greet()
+    {
+        Console.WriteLine("Hello, I'm a dog!");
+    }
+}
+```
