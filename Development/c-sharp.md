@@ -103,3 +103,8 @@ int notNullable = null; // Will cause an error from the compiler
 int? nullable = null; // Just fine - it's nullable!
 ```
 This is valid for all so-called value types like integers, floats, bools and structs. Strings and objects on the other hand are reference types and can't be declared as nullable, because they are, by default, nullable.
+
+```c#
+Console.WriteLine("Hello, " + (userSuppliedName ?? "Anonymous")); 
+```
+In a single statement, we ask the interpreter to use the userSuppliedName variable if it has a value – if not, we supply a fallback value, in this case the name "Anonymous". Short and simple!
