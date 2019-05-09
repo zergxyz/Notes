@@ -44,3 +44,6 @@ https://stackoverflow.com/questions/29569801/dynamic-pivot-needed-with-row-numbe
 how to use cte 
 https://stackoverflow.com/questions/18941275/joining-multiple-common-table-expressions 
 
+how to get max value rows from multiple similar rows: 
+https://stackoverflow.com/questions/612231/how-can-i-select-rows-with-maxcolumn-value-distinct-by-another-column-in-sql 
+
