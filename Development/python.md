@@ -75,6 +75,6 @@ in numpy we can use the following way to add a new column:
 https://stackoverflow.com/questions/8486294/how-to-add-an-extra-column-to-a-numpy-array  
 
 in python how to use a function to return the string's unicode value? 
-https://stackoverflow.com/questions/2352018/cant-use-unichr-in-python-3-1/54354701  use char() in python 3
+https://stackoverflow.com/questions/2352018/cant-use-unichr-in-python-3-1/54354701  use chr() in python 3
 
 the usage of map, reduce and filter: http://book.pythontips.com/en/latest/map_filter.html 
