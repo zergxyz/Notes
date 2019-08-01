@@ -47,3 +47,7 @@ https://stackoverflow.com/questions/18941275/joining-multiple-common-table-expre
 how to get max value rows from multiple similar rows: 
 https://stackoverflow.com/questions/612231/how-can-i-select-rows-with-maxcolumn-value-distinct-by-another-column-in-sql 
 
+how to get rid of the last n characters from the string in T-sql? 
+SELECT LEFT(YourColumnName, LEN(YourColumnName) - 1) FROM YourTable   
+
+
